@@ -1,5 +1,6 @@
 LXC 安裝 Docker CE
 ===
+** 重要:目前還不能用哦 !!**
 
 # LXC　預設ssh root 仍是disable ,所以要先打開 
 安裝後可以修改一些 ssh 的設定, 如port, 密碼認證, root登入等
@@ -33,6 +34,11 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
 ```
+# 測試一下Docker 服務是否可以使用
+```
+docker run hello-world
+```
+
 # 用lxc 產生ssh key 給gitlab.com
 > 不然無法接下來專案哦
 # 建立Dockerfile
