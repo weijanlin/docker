@@ -64,5 +64,5 @@ ENTRYPOINT ["dotnet", "/opt/RAD/RAD.Api.dll", "--urls", "http://+80"]
 # Docker RUN
 * [Docker run參數可以參考](https://www.runoob.com/docker/docker-run-command.html)
 ```
-docker run -p 80:80 -v /data:/data -d rad:latest
+docker run -p 80:80 -v /data:/data -d rad
 ```
