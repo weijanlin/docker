@@ -36,7 +36,11 @@ Login Succeeded
 # 用lxc 產生ssh key 給gitlab.com
 > 不然無法接下來專案哦
 # 建立Dockerfile
-以maxaiot 的rad 專案為例
+以maxaiot 的rad 專案為例建立的Dockerfile
+```
+vi Dockerfile
+```
+>內容如下：
 ```
 FROM ubuntu:18.04
 RUN apt-get update -y \
@@ -56,6 +60,4 @@ RUN dotnet restore \
     && chmod -R 777 /opt/RAD
 WORKDIR /opt/RAD
 ENTRYPOINT ["dotnet", "/opt/RAD/RAD.Api.dll", "--urls", "http://+80"]
-
-
 ```
